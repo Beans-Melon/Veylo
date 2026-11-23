@@ -21,7 +21,7 @@ Created by **ElctroZeus** · **CodeLineCore**
 
 Different version numbers are intentional. This release collects the latest prepared build for each platform; it does not imply that all platforms have identical features.
 
-**Source archives** for Android/Chrome 0.28.0 and Windows 0.29.0, the Windows guide, and SHA-256 checksums are attached to the release. This repository hosts the product site and documentation; application source is provided in those versioned archives.
+The Windows guide and SHA-256 checksums are attached to the release. This repository hosts the product site and documentation. Separate application source archives are not currently published.
 
 ## Full feature documentation
 
