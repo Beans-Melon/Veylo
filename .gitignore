@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+*.vvlt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.pem
+.env
+.env.*
+!.env.example
+vaults.json
+*.log
