@@ -10,22 +10,22 @@ Created by **ElctroZeus** · **CodeLineCore**
 
 ## Downloads
 
-[Open the download release](https://github.com/Beans-Melon/Veylo/releases/tag/test-2026-11-23) · [Visit the website](https://beans-melon.github.io/Veylo/)
+[Open the download release](https://github.com/Beans-Melon/Veylo/releases/tag/v0.30.0-test) · [Visit the website](https://beans-melon.github.io/Veylo/)
 
 | Package | Version | Requirements |
 | --- | --- | --- |
-| [Windows installer](https://github.com/Beans-Melon/Veylo/releases/download/test-2026-11-23/Veylo-0.29.0-Windows-Setup.exe) | 0.29.0 | Windows 10/11, x64 |
-| [Android APK](https://github.com/Beans-Melon/Veylo/releases/download/test-2026-11-23/Veylo-0.28.0-Local-Test.apk) | 0.28.0 | Android 11+ |
-| [Chrome extension ZIP](https://github.com/Beans-Melon/Veylo/releases/download/test-2026-11-23/Veylo-0.28.0-Chrome.zip) | 0.28.0 | Desktop Chrome 133+ |
-| [Chrome Wi-Fi sync companion](https://github.com/Beans-Melon/Veylo/releases/download/test-2026-11-23/Veylo-0.27.0-Windows-Companion.zip) | 0.27.0 | Windows x64; compatible with Chrome/Android 0.28.0 |
+| [Windows installer](https://github.com/Beans-Melon/Veylo/releases/download/v0.30.0-test/Veylo-0.30.0-Windows-Setup.exe) | 0.30.0 | Windows 10/11, x64 |
+| [Android APK](https://github.com/Beans-Melon/Veylo/releases/download/v0.30.0-test/Veylo-0.30.0-Local-Test.apk) | 0.30.0 | Android 11+ |
+| [Chrome extension ZIP](https://github.com/Beans-Melon/Veylo/releases/download/v0.30.0-test/Veylo-0.30.0-Chrome.zip) | 0.30.0 | Desktop Chrome 133+ |
+| [Chrome Wi-Fi sync companion](https://github.com/Beans-Melon/Veylo/releases/download/test-2026-11-23/Veylo-0.27.0-Windows-Companion.zip) | 0.27.0 | Windows x64; compatible with Chrome/Android 0.30.0 |
 
-Different version numbers are intentional. This release collects the latest prepared build for each platform; it does not imply that all platforms have identical features.
+Version 0.30.0 adds Cloudflare-backed GitHub update notices on Android, Windows and Chrome. Platform features still differ.
 
-The Windows guide and SHA-256 checksums are attached to the release. This repository hosts the product site and documentation. Separate application source archives are not currently published.
+The update guide and SHA-256 checksums are attached to the release. This repository hosts the product site and documentation. Separate application source archives are not currently published.
 
 ## Full feature documentation
 
-Read **[FEATURES.md](FEATURES.md)** for professional explanations of **48 implemented or experimental features**, platform availability, operational limits and a separate development roadmap.
+Read **[FEATURES.md](FEATURES.md)** for professional explanations of **49 implemented or experimental features**, platform availability, operational limits and a separate development roadmap.
 
 - **Vaults:** AES-256-GCM storage, Argon2id key derivation, independent vaults, passphrase/unlock-word protection and automatic locking.
 - **Everyday use:** structured logins, Important Notes, copy/reveal controls, search, groups, favorites and a configurable password generator.
@@ -38,9 +38,9 @@ Read **[FEATURES.md](FEATURES.md)** for professional explanations of **48 implem
 
 ## Sync status — read before testing
 
-Local Wi-Fi sync is implemented, with QR-assisted pairing, reviewed merges and saved-record verification. Chrome requires the separate companion; Windows 0.29.0 includes its own relay. Physical phone-to-Windows validation remains necessary.
+Local Wi-Fi sync is implemented, with QR-assisted pairing, reviewed merges and saved-record verification. Chrome requires the separate companion; Windows 0.30.0 includes its own relay. Physical phone-to-Windows validation remains necessary.
 
-**Bluetooth data-sync discovery is unresolved.** Bluetooth keyboard Auto-Type is a separate function. Windows 0.29.0 does not expose Bluetooth data sync.
+**Bluetooth data-sync discovery is unresolved.** Bluetooth keyboard Auto-Type is a separate function. Windows 0.30.0 does not expose Bluetooth data sync.
 
 **Veylo Link is in development.** These downloads do not automatically synchronize the Android, Windows and Chrome vaults as one three-way system. Forge Sentinel browser integration is also not included.
 
@@ -69,3 +69,7 @@ See [SECURITY.md](SECURITY.md). Never include real passwords, vault files, unloc
 **Veylo** draws on the idea of a veil: a protective layer the user chooses when to lift. The interface aims to make revealing, copying, filling and transferring credentials explicit actions.
 
 No additional open-source license is granted by this repository. Bundled third-party components retain their own licenses in the source and application packages.
+
+## In-app updates — 0.30.0
+
+The bottom **Update to latest version of Veylo** button checks the published GitHub builds through Cloudflare. Its white border pulses only when a newer version is known; reduced-motion preferences disable animation. **Settings → Updates** provides manual checking and an automatic-check toggle. Checks run while the interface is open, at most once every six hours. Installation stays manual. No vault data is sent; ordinary connection metadata reaches Cloudflare. Install 0.30.0 manually once to gain this feature.

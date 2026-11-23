@@ -231,3 +231,9 @@ Google Authenticator login, Google Drive/Gmail sync and QR-over-USB are not part
 - No independent security audit has been completed. No claim is made that Veylo is unbreakable, admin-proof or immune to a compromised operating system.
 - Rendered Windows UI, physical Nokia biometric behavior, actual Windows installation and real phone-to-PC network/firewall behavior remain device-validation tasks.
 - Store test data first, verify recovery, and retain an established password manager and independent encrypted backups while evaluating these builds.
+
+## Update notices — added in 0.30.0
+
+### 49. In-app update checking with a pulsing white border — all platforms
+
+A persistent bottom update button is available in the main application, including its locked screen. It checks the public Veylo GitHub releases through a dedicated Cloudflare Worker and compares the version for the current platform. When a newer build is known, the button displays its version and gently pulses its white border while leaving its text steady. Reduced-motion preferences disable animation. Settings → Updates provides manual checking and an automatic-check switch. Automatic checks occur while the interface is open, at most every six hours; these are not push alerts while the application is closed. The control opens only a Veylo GitHub release page; downloading and installation remain user actions. The service receives no vault contents, though Cloudflare receives ordinary network metadata such as IP addresses. Older installations need one manual update to 0.30.0 before this feature is available.
